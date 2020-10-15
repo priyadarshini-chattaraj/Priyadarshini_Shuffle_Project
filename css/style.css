@@ -1,0 +1,157 @@
+.container {
+    width: 900px;
+    margin: 0 auto;
+    background: #EFEFEF;
+}
+
+header {
+    border: 1px solid #fff;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+    background: #ffffff;
+}
+hr {
+    background: #BFBFBF;
+    height: 7px;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    font-weight: 100;
+    color: #2F454E;
+}
+aside {
+    float: right;
+}
+section {
+    overflow: hidden;
+    min-height: 170px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+    padding: 0.3em 0.8em;
+    margin: 0px -3px;
+    font-size: 6em;
+    display: inline-block;
+    color: #fff;
+    font-weight: 100;
+}
+
+.btn {
+    overflow: visible;
+    display: block;
+    width: 240px;
+    position: relative;
+    top: 0px;
+    font-family: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #f7f7f7;
+    margin: 25px 22px 0 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px #c4c4c4;
+    text-shadow: 1px 1px 1px #fff;
+    -ms-transition: All 250ms ease;
+    transition: All 250ms ease;
+    padding: 0.8em 2em;
+}
+/*==========  Button Active State  ==========*/
+
+.btn:active {
+    position: relative;
+    top: 5px;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-transition: All 250ms ease;
+    -moz-transition: All 250ms ease;
+    -o-transition: All 250ms ease;
+    -ms-transition: All 250ms ease;
+    transition: All 250ms ease;
+}
+/*==========  Button Blue  ==========*/
+
+.btn.blue {
+    background: #72c3dc;
+    color: #fff;
+    border: 1px solid #2b8ead;
+    -webkit-border-radius: 5px;
+
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 0px #2b8ead;
+
+    -ms-box-shadow: 0px 5px 0px #2b8ead;
+
+    box-shadow: 0px 5px 0px #2b8ead;
+    text-shadow: 1px 1px 1px #2b8ead;
+    font-weight: 100;
+}
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    color: #333333;
+    padding: 5px;
+}
+@media screen and (min-width: 360px) and (max-width: 900px) {
+    .container {
+        background: none;
+        width: 100%;
+    }
+    .line {
+        display: none;
+    }
+    body{
+        margin: 0;
+        border: 10px solid #000000;
+    }
+    aside {
+        float: none;
+        margin: 1em;
+        width: auto;
+        border: 0;
+        text-align: center;
+    }
+    header {
+        background: #2F454E;
+        color: #fff;
+        border: 0;
+    }
+    h2 {
+        color: #fff;
+        height: 45px;
+        margin-top: 0;
+        padding-top: 15px;
+    }
+    .btn {
+        overflow: visible;
+        padding: 10px 15px;
+        display: inline-block;
+        margin: 10px;
+        width: 120px;
+    }
+    ul{
+        padding: 0 10px;
+    }
+    ul li {
+        list-style: none;
+        padding: 0.3em;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 3em;
+        text-align: center;
+        color: #2F454E;
+        background: #EFEFEF !important;
+    }
+}
+button:focus{
+    outline: 0;
+}
